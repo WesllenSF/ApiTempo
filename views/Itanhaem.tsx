@@ -22,10 +22,11 @@ export default function Itanhaem(){
             <FlatList 
                 data={dados}
                 keyExtractor={(item)=>item.date}
-                renderItem={({item})=> <Tempo date={item.date} 
-                max={item.max} min={item.min} description={item.description} 
-                condition={item.condition} lua={item.moon_phase}
-                />}
+                renderItem={({item})=> 
+                    <Tempo date={item.date} 
+                        max={item.max} min={item.min} description={item.description} 
+                        condition={item.condition} lua={item.moon_phase}
+                    />}
                 style={styles.lista}
             />
         </View>
@@ -36,15 +37,17 @@ const styles = StyleSheet.create({
     bloco:{
         flex:1,
         alignItems:'center',
-        justifyContent:'flex-start',
-        marginTop:40
+        justifyContent:'center',
+        marginTop:40,
     },
     Texto:{
-        fontSize:20,
+        fontSize: 25,
     },
     lista:{
-        height:'70%',
-        width:'100%'
+        height: '80%',
+        width:'100%',
+        marginLeft: '10%',
+        marginTop: 40,
     }
     
 });

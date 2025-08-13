@@ -17,7 +17,7 @@ export default function PraiaGrande(){
 
     return(
         <View style={styles.bloco}>
-            <Text style={styles.Texto}>Previsão do Tempo para Mongaguá</Text>
+            <Text style={styles.Texto}>Previsão do Tempo para Praia Grande</Text>
 
             <FlatList 
                 data={dados}
@@ -33,18 +33,20 @@ export default function PraiaGrande(){
 }
 
 const styles = StyleSheet.create({
-    bloco:{
+   bloco:{
         flex:1,
         alignItems:'center',
-        justifyContent:'flex-start',
-        marginTop:40
+        justifyContent:'center',
+        marginTop:40,
     },
     Texto:{
-        fontSize:20,
+        fontSize: 25,
     },
     lista:{
-        height:'70%',
-        width:'100%'
+        height: '80%',
+        width:'100%',
+        marginLeft: '10%',
+        marginTop: 40,
     }
     
 });

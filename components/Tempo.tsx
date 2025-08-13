@@ -49,13 +49,14 @@ const styles = StyleSheet.create({
     },
     principal:{
         width:'80%',
-        borderWidth:2,
-        borderRadius:30,
         padding:20,
-        margin:20
+        margin:20,
+        backgroundColor:"#820000",
+        borderRadius: 10,
     },
     texto:{
-        fontSize:20
+        fontSize:20,
+        color: '#fff',
     }
     
 });

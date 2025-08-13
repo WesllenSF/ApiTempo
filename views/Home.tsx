@@ -46,22 +46,23 @@ const styles = StyleSheet.create({
     bloco:{
         flex:1,
         alignItems:'center',
-        justifyContent:'center'
+        justifyContent:'center',
     },
     Texto:{
-        fontSize:30
+        fontSize:50,
+        marginBottom: 100,
     },
     btn:{
-       backgroundColor:"#5599AA",
+       backgroundColor:"#820000",
        width:'80%',
        padding:10,
        marginBottom:20,
        marginTop: 20,
-       borderRadius:20
+       borderRadius: 5
     },
     textoBtn:{
-        color:"#FFF",
+        color:'#fff',
         fontSize:30,
         textAlign:'center'
     }
-});
+}); 
