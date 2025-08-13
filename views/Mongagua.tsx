@@ -3,7 +3,7 @@ import {View, Text, StyleSheet, FlatList} from 'react-native';
 import Tempo from '../components/Tempo';
 import Api from '../components/Api';
 
-export default function Itanhaem(){
+export default function Mongagua(){
     const [dados, setDados] = useState<any[]>([]);
 
     async function buscaTempo(){
@@ -17,7 +17,7 @@ export default function Itanhaem(){
 
     return(
         <View style={styles.bloco}>
-            <Text style={styles.Texto}>Previsão do Tempo para Itanhaém</Text>
+            <Text style={styles.Texto}>Previsão do Tempo para Mongaguá</Text>
 
             <FlatList 
                 data={dados}

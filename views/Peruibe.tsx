@@ -3,11 +3,11 @@ import {View, Text, StyleSheet, FlatList} from 'react-native';
 import Tempo from '../components/Tempo';
 import Api from '../components/Api';
 
-export default function Itanhaem(){
+export default function Peruibe(){
     const [dados, setDados] = useState<any[]>([]);
 
     async function buscaTempo(){
-        const response = await Api.get('weather?array_limit=4&fields=only_results,temp,city_name,forecast,condition,max,min,description,date,moon_phase&key=f95e879e&city_name=Itanhaem,SP');
+        const response = await Api.get('weather?array_limit=4&fields=only_results,temp,city_name,forecast,condition,max,min,description,date,moon_phase&key=f95e879e&city_name=Peruibe,SP');
         setDados(response.data.forecast);
     }
     useEffect(
@@ -17,7 +17,7 @@ export default function Itanhaem(){
 
     return(
         <View style={styles.bloco}>
-            <Text style={styles.Texto}>Previsão do Tempo para Itanhaém</Text>
+            <Text style={styles.Texto}>Previsão do Tempo para Mongaguá</Text>
 
             <FlatList 
                 data={dados}

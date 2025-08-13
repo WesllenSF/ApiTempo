@@ -4,7 +4,6 @@ import {
     createStaticNavigation,
     useNavigation,
   } from '@react-navigation/native';
-  import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 export default function Home(){
     const navigation = useNavigation();
@@ -17,6 +16,27 @@ export default function Home(){
                     onPress={()=>navigation.navigate('Itanhaem' as never)}
                 >
                     <Text style={styles.textoBtn}>Itanhaém</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity 
+                    style={styles.btn}
+                    onPress={()=>navigation.navigate('Mongagua' as never)}
+                >
+                    <Text style={styles.textoBtn}>Mongaguá</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity 
+                    style={styles.btn}
+                    onPress={()=>navigation.navigate('Peruibe' as never)}
+                >
+                    <Text style={styles.textoBtn}>Peruíbe</Text>
+                </TouchableOpacity>
+
+                <TouchableOpacity 
+                    style={styles.btn}
+                    onPress={()=>navigation.navigate('PraiaGrande' as never)}
+                >
+                    <Text style={styles.textoBtn}>Praia Grande</Text>
                 </TouchableOpacity>
         </View>
     );
