@@ -17,7 +17,7 @@ export default function Peruibe(){
 
     return(
         <View style={styles.bloco}>
-            <Text style={styles.Texto}>Previsão do Tempo para Mongaguá</Text>
+            <Text style={styles.Texto}>Previsão do Tempo para Peruíbe</Text>
 
             <FlatList 
                 data={dados}
